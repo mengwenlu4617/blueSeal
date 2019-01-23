@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title_layout" />
+
+    <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+        android:id="@+id/edit_et_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_50dp"
+        android:background="@drawable/layout_bottom_view_bg"
+        android:paddingLeft="@dimen/margin_padding_15dp"
+        android:paddingRight="@dimen/margin_padding_15dp"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/gray_333"
+        android:textColorHint="@color/gray_999"
+        android:textSize="@dimen/text_16sp" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/app_title_layout" />
+
+        <LinearLayout
+            style="@style/layout_white_bg"
+            android:layout_marginTop="@dimen/margin_padding_50dp">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                android:id="@+id/verification_et_phone"
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/login_phone"
+                android:inputType="number"
+                android:maxLength="11" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                android:id="@+id/verification_et_code"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="@string/regist_code"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textColor="@color/gray_333"
+                android:textColorHint="@color/gray_999"
+                android:textSize="@dimen/text_16sp" />
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MButton
+                android:id="@+id/verification_btn_sendCode"
+                android:layout_width="@dimen/view_size_100dp"
+                android:layout_height="@dimen/view_size_30dp"
+                android:background="@drawable/butn_noclick_bg"
+                android:text="@string/send_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14sp" />
+        </LinearLayout>
+
+        <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MButton
+            android:id="@+id/verification_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_45dp"
+            android:layout_marginLeft="@dimen/margin_padding_15dp"
+            android:layout_marginRight="@dimen/margin_padding_15dp"
+            android:layout_marginTop="@dimen/margin_padding_25dp"
+            android:background="@drawable/butn_click_bg"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/margin_padding_30dp">
+
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_next_desc"
+                android:textColor="@color/gray_666"
+                android:textSize="@dimen/text_12sp" />
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                android:id="@+id/verification_tv_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_service_Agreement"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_12sp" />
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/and"
+                android:textColor="@color/gray_666"
+                android:textSize="@dimen/text_12sp" />
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                android:id="@+id/verification_tv_secrecy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_secrecy_Agreement"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/empty"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bottom_img_bg" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

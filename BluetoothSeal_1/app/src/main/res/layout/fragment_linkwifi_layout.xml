@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="251dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="@dimen/margin_padding_50dp"
+            android:layout_marginTop="@dimen/margin_padding_50dp"
+            android:contentDescription="@string/empty"
+            android:src="@mipmap/about_stamp_logo" />
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                android:id="@+id/linkFifi_tv_wifiName"
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/wifi_name"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                android:id="@+id/linkFifi_et_wifiPass"
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/wifi_pass"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MButton
+            android:id="@+id/linkFifi_btn_go"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_45dp"
+            android:layout_marginLeft="@dimen/margin_padding_15dp"
+            android:layout_marginRight="@dimen/margin_padding_15dp"
+            android:layout_marginTop="@dimen/margin_padding_50dp"
+            android:background="@drawable/butn_click_bg"
+            android:text="@string/tab_title_linkWifi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

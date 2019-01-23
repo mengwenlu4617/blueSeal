@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/app_title_layout" />
+
+        <LinearLayout
+            android:id="@+id/modify_oldPass_View"
+            style="@style/layout_white_bg"
+            android:visibility="gone">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                android:id="@+id/reset_pass_et_oldPass"
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/reset_pass"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                android:id="@+id/reset_pass_et_newPass1"
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/new_pwd"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                android:id="@+id/reset_pass_et_newPass2"
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/new_pwd_ok"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MButton
+            android:id="@+id/reset_pass_btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_45dp"
+            android:layout_marginLeft="@dimen/margin_padding_15dp"
+            android:layout_marginRight="@dimen/margin_padding_15dp"
+            android:layout_marginTop="@dimen/margin_padding_25dp"
+            android:background="@drawable/butn_click_bg"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

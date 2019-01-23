@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadStatus_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/loadStatus_image"
+        android:layout_width="@dimen/view_size_100dp"
+        android:layout_height="@dimen/view_size_100dp"
+        android:contentDescription="@string/empty"
+        android:src="@mipmap/icon_empty" />
+
+    <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+        android:id="@+id/loadStatus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_15dp"
+        android:text="@string/no_data"
+        android:textColor="@color/gray_333"
+        android:textSize="@dimen/text_16sp" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_padding_15dp"
+                android:text="我的资料"
+                android:textColor="@color/gray_666"
+                android:textSize="@dimen/text_14sp" />
+
+            <LinearLayout
+                android:id="@+id/userInfo_layout_photo"
+                style="@style/layout_white_bg"
+                android:paddingRight="0dp">
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:text="@string/info_photo" />
+
+                <com.fastwork.library.viewutil.widget.CircleImageView
+                    android:id="@+id/userInfo_img_photo"
+                    android:layout_width="@dimen/view_size_40dp"
+                    android:layout_height="@dimen/view_size_40dp"
+                    android:src="@mipmap/icon_photo" />
+
+                <ImageView
+                    android:layout_width="@dimen/view_size_45dp"
+                    android:layout_height="@dimen/view_size_45dp"
+                    android:contentDescription="@string/empty"
+                    android:padding="@dimen/margin_padding_15dp"
+                    android:src="@mipmap/icon_go" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userInfo_layout_name"
+                style="@style/layout_white_bg"
+                android:paddingRight="0dp">
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:text="@string/info_name" />
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    android:id="@+id/userInfo_txt_name"
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:hint="@string/info_name"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="@dimen/view_size_45dp"
+                    android:layout_height="@dimen/view_size_45dp"
+                    android:contentDescription="@string/empty"
+                    android:padding="@dimen/margin_padding_15dp"
+                    android:src="@mipmap/icon_go" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userInfo_layout_phone"
+                style="@style/layout_white_bg"
+                android:paddingRight="0dp">
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:text="@string/info_phone" />
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    android:id="@+id/userInfo_txt_phone"
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:hint="@string/info_phone"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="@dimen/view_size_45dp"
+                    android:layout_height="@dimen/view_size_45dp"
+                    android:contentDescription="@string/empty"
+                    android:padding="@dimen/margin_padding_15dp"
+                    android:src="@mipmap/icon_go"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userInfo_layout_email"
+                style="@style/layout_white_bg"
+                android:paddingRight="0dp">
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:text="@string/info_email" />
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    android:id="@+id/userInfo_txt_email"
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:hint="@string/info_email"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="@dimen/view_size_45dp"
+                    android:layout_height="@dimen/view_size_45dp"
+                    android:contentDescription="@string/empty"
+                    android:padding="@dimen/margin_padding_15dp"
+                    android:src="@mipmap/icon_go" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userInfo_layout_zxing"
+                style="@style/layout_white_bg"
+                android:paddingRight="0dp">
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:text="@string/info_zxing" />
+
+                <ImageView
+                    android:layout_width="@dimen/view_size_30dp"
+                    android:layout_height="@dimen/view_size_30dp"
+                    android:contentDescription="@string/empty"
+                    android:src="@mipmap/icon_zxing_code" />
+
+                <ImageView
+                    android:layout_width="@dimen/view_size_45dp"
+                    android:layout_height="@dimen/view_size_45dp"
+                    android:contentDescription="@string/empty"
+                    android:padding="@dimen/margin_padding_15dp"
+                    android:src="@mipmap/icon_go" />
+            </LinearLayout>
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_padding_15dp"
+                android:text="公司资料"
+                android:textColor="@color/gray_666"
+                android:textSize="@dimen/text_14sp" />
+
+            <LinearLayout
+                android:id="@+id/userInfo_layout_company"
+                style="@style/layout_white_bg"
+                android:paddingRight="0dp">
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:text="@string/info_company" />
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    android:id="@+id/userInfo_txt_company"
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:hint="@string/info_company"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="@dimen/view_size_45dp"
+                    android:layout_height="@dimen/view_size_45dp"
+                    android:contentDescription="@string/empty"
+                    android:padding="@dimen/margin_padding_15dp"
+                    android:src="@mipmap/icon_go" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userInfo_layout_job"
+                style="@style/layout_white_bg"
+                android:paddingRight="0dp">
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:text="@string/info_job" />
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    android:id="@+id/userInfo_txt_job"
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:hint="@string/info_job"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="@dimen/view_size_45dp"
+                    android:layout_height="@dimen/view_size_45dp"
+                    android:contentDescription="@string/empty"
+                    android:padding="@dimen/margin_padding_15dp"
+                    android:src="@mipmap/icon_go" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userInfo_layout_jobNumber"
+                style="@style/layout_white_bg"
+                android:paddingRight="0dp">
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:text="@string/info_jobNumber" />
+
+                <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                    android:id="@+id/userInfo_txt_jobNumber"
+                    style="@style/text_white_bg"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:hint="@string/info_jobNumber"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="@dimen/view_size_45dp"
+                    android:layout_height="@dimen/view_size_45dp"
+                    android:contentDescription="@string/empty"
+                    android:padding="@dimen/margin_padding_15dp"
+                    android:src="@mipmap/icon_go" />
+            </LinearLayout>
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MButton
+                android:id="@+id/userInfo_btn_exitCompany"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_45dp"
+                android:layout_marginLeft="@dimen/margin_padding_15dp"
+                android:layout_marginRight="@dimen/margin_padding_15dp"
+                android:layout_marginTop="@dimen/margin_padding_25dp"
+                android:layout_marginBottom="@dimen/margin_padding_25dp"
+                android:background="@drawable/butn_click_bg"
+                android:text="@string/exit_company"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

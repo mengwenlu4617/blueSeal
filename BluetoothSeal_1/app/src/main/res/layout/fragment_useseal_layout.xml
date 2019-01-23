@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                android:id="@+id/text"
+                style="@style/text_white_bg"
+                android:hint="@string/select_device" />
+
+            <ImageView
+                android:layout_width="@dimen/view_size_50dp"
+                android:layout_height="@dimen/view_size_50dp"
+                android:contentDescription="@string/empty"
+                android:padding="@dimen/margin_padding_15dp"
+                android:src="@mipmap/icon_go" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/use_reason"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/use_number"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MButton
+                android:layout_width="@dimen/view_size_100dp"
+                android:layout_height="@dimen/view_size_100dp"
+                android:background="@drawable/text_blue_oval_bg"
+                android:text="@string/use_seal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

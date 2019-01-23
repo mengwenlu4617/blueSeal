@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="loadDialog_style" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+    <style name="divider_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/gray_999</item>
+    </style>
+
+    <style name="layout_white_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_size_50dp</item>
+        <item name="android:paddingLeft">@dimen/margin_padding_15dp</item>
+        <item name="android:paddingRight">@dimen/margin_padding_15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/layout_bottom_view_bg</item>
+    </style>
+
+    <style name="text_white_bg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:textColor">@color/gray_333</item>
+        <item name="android:textColorHint">@color/gray_999</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="stripe_width" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="bgcolor" format="color" />
+        <attr name="forecolor" format="color" />
+        <attr name="text_color" format="color" />
+        <attr name="text_size" format="dimension" />
+    </declare-styleable>
+
+    <style name="header_channel_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/view_size_100dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/item_click_bg</item>
+    </style>
+
+</resources>

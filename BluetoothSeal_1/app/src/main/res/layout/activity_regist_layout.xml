@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <include layout="@layout/app_title_layout" />
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                android:id="@+id/regist_et_name"
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/regis_name"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:imeOptions="actionNext"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                android:id="@+id/regist_et_pass1"
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/login_pass"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MEditText
+                android:id="@+id/regist_et_pass2"
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:hint="@string/regis_ok_pwd"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+        <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MButton
+            android:id="@+id/regist_btn_regist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_size_45dp"
+            android:layout_marginLeft="@dimen/margin_padding_15dp"
+            android:layout_marginRight="@dimen/margin_padding_15dp"
+            android:layout_marginTop="@dimen/margin_padding_25dp"
+            android:background="@drawable/butn_click_bg"
+            android:text="@string/regist"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

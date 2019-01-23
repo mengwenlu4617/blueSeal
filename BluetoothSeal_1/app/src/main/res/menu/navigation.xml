@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/tab_select_home"
+        android:title="@string/tab_title_home" />
+
+    <item
+        android:id="@+id/navigation_useSeal"
+        android:icon="@drawable/tab_select_useseal"
+        android:title="@string/tab_title_useSeal" />
+
+    <item
+        android:id="@+id/navigation_linkWifi"
+        android:icon="@drawable/tab_select_linkwifi"
+        android:title="@string/tab_title_linkWifi" />
+
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/tab_select_my"
+        android:title="@string/tab_title_mime" />
+
+</menu>

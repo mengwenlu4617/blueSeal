@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="251dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="@dimen/margin_padding_50dp"
+            android:layout_marginTop="@dimen/margin_padding_50dp"
+            android:contentDescription="@string/empty"
+            android:src="@mipmap/about_stamp_logo" />
+
+        <LinearLayout
+            android:id="@+id/aboutApp_layout_guide"
+            style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:text="@string/about_guide" />
+
+            <ImageView
+                android:layout_width="@dimen/view_size_45dp"
+                android:layout_height="@dimen/view_size_45dp"
+                android:contentDescription="@string/empty"
+                android:padding="@dimen/margin_padding_15dp"
+                android:src="@mipmap/icon_go" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutApp_layout_service"
+            style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:text="@string/service_Agreement" />
+
+            <ImageView
+                android:layout_width="@dimen/view_size_45dp"
+                android:layout_height="@dimen/view_size_45dp"
+                android:contentDescription="@string/empty"
+                android:padding="@dimen/margin_padding_15dp"
+                android:src="@mipmap/icon_go" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutApp_layout_secrecy"
+            style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:text="@string/secrecy_Agreement" />
+
+            <ImageView
+                android:layout_width="@dimen/view_size_45dp"
+                android:layout_height="@dimen/view_size_45dp"
+                android:contentDescription="@string/empty"
+                android:padding="@dimen/margin_padding_15dp"
+                android:src="@mipmap/icon_go" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutApp_layout_version"
+            style="@style/layout_white_bg">
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                style="@style/text_white_bg"
+                android:background="@color/white"
+                android:text="@string/version_name" />
+
+            <com.bjzhijian.bluetoothseal.intelligentseal.widgets.MTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/margin_padding_15dp"
+                android:text="1.0.0"
+                android:textColor="@color/gray_666"
+                android:textSize="@dimen/text_16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

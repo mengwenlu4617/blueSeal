@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner rootProject.ext.android.testRunner
+
+//        manifestPlaceholders = [
+//                JPUSH_PKGNAME: applicationId,
+//                JPUSH_APPKEY : "608f922de538244111ecf0a0", //JPush上注册的包名对应的appkey（*换成你的*）
+//                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+//        ]
+        ndk {
+            abiFilters 'armeabi', 'x86', 'mips'//or armeabi-v7a、arm64-v8a、x86
+        }
+
+        vectorDrawables.useSupportLibrary = true
+
+        /** 设置MultiDex可用 添加多 dex分包支持*/
+        multiDexEnabled true
+    }
+
+    //配置keystore签名
+    signingConfigs {
+        release {
+            storeFile file("BluetoothSeal.jks")
+            storePassword "58858185"
+            keyAlias "key1"
+            keyPassword "58858185"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig android.signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            signingConfig android.signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    // 保证其他的lib没有被preDex
+    dexOptions {
+        preDexLibraries = false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation rootProject.ext.dependencies.appCompat
+    implementation rootProject.ext.dependencies.design
+    implementation rootProject.ext.dependencies.constraint
+    implementation rootProject.ext.dependencies.vector
+
+    // cardView
+    implementation rootProject.ext.dependencies.cardView
+    // recyclerview
+    implementation rootProject.ext.dependencies.recyclerview
+    // MultiDex的依赖
+    implementation rootProject.ext.dependencies.multidex
+    // 必须使用 com.lzy.net:okgo
+    implementation rootProject.ext.dependencies.okgoutil
+    // gson
+    implementation rootProject.ext.dependencies.googleGson
+    // videoplayer
+    implementation rootProject.ext.dependencies.jiaozivideoplayer
+    // eventbus
+    implementation rootProject.ext.dependencies.eventbus
+    // butterknife
+    implementation rootProject.ext.dependencies.butterKnife
+    annotationProcessor rootProject.ext.dependencies.butterKnifeCompiler
+    // 自定义工具类的封装
+    implementation project(':toolslibrary')
+    // 二维码工具类
+    implementation project(':lib-zxing')
+    // 图片选择工具类
+    implementation project(':imagepicker')
+    // 图片压缩工具类
+    implementation project(':luban_library')
+    // SmartRefreshLayout 下拉刷新上拉加载
+    implementation project(':refresh-layout')
+
+}
