@@ -1,2 +1,2 @@
-# blueSeal
-蓝牙印章第二版
+# bluetoothseal
+蓝牙印章App重构
